@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <h1 class="calculator__title">calc</h1>
+    <div class="calculator__display"></div>
+    <div class="calculator__body">
+      <div class="calculator__row">
+        <button class="calculator__button">7</button>
+        <button class="calculator__button">8</button>
+        <button class="calculator__button">9</button>
+        <button class="calculator__button calculator__button--special">DEL</button>
+      </div>
+      <div class="calculator__srow">
+        <button class="calculator__button">4</button>
+        <button class="calculator__button">5</button>
+        <button class="calculator__button">6</button>
+        <button class="calculator__button" data-action="add">+</button>
+      </div>
+      <div class="calculator__row">
+        <button class="calculator__button">1</button>
+        <button class="calculator__button">2</button>
+        <button class="calculator__button">3</button>
+        <button class="calculator__button" data-action="subtract">-</button>
+      </div>
+      <div class="calculator__frow">
+        <button class="calculator__button">.</button>
+        <button class="calculator__button">0</button>
+        <button class="calculator__button" data-action="divide">/</button>
+        <button class="calculator__button" data-action="multiply">x</button>
+      </div>
+      <div class="calculator__row">
+        <button class="calculator__button calculator__button--50 calculator__button--special">RESET</button>
+        <button class="calculator__button calculator__button--50 calculator__button--result" data-action="calculate">=</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
